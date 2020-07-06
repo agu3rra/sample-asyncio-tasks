@@ -34,4 +34,7 @@ if __name__ == '__main__':
         loop.close()
 
     print("Tasks execution completed!")
+    print("Results retrieved:")
+    for task in tasks:
+        print(task.result())
     print(f"Finished: {time.strftime('%X')}")
